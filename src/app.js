@@ -7,11 +7,19 @@ app.use(bpJson())
 app.use(bpUrlEncoded({ extended: false }))
 app.use(bpRaw())
 
-app.use((_req, res) => {
+app.get('/', (_req, res) => {
 	res.send({
 		route: '/',
 		message: 'JobFindrr API',
 		version: '0.0.1-alpha',
+	})
+})
+
+app.use('*', (_req, res) => {
+	res.status(404).send({
+		type: 'Error',
+		code: 404,
+		message: 'Error 404 - Route not found',
 	})
 })
 
