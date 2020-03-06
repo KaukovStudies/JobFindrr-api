@@ -1,6 +1,11 @@
 const express = require('express')
+const { json: bpJson, urlencoded: bpUrlEncoded, raw: bpRaw } = require('body-parser')
 
 const app = express()
+
+app.use(bpJson())
+app.use(bpUrlEncoded({ extended: false }))
+app.use(bpRaw())
 
 app.use((_req, res) => {
 	res.send({
