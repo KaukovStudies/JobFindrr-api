@@ -5,12 +5,14 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
+    "dev": "APP_ENV=dev nodemon src/app.js",
     "lint": "./node_modules/.bin/eslint src"
   },
   "author": "Peter Kaukov",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2"
   }
 }
