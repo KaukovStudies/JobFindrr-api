@@ -1,0 +1,12 @@
+{
+  "name": "jobfindrr-backend",
+  "version": "0.0.1-alpha",
+  "description": "JobFindrr's backend project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Kaukov",
+  "license": "ISC",
+  "dependencies": {}
+}
