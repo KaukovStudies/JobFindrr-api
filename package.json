@@ -1,7 +1,7 @@
 {
-  "name": "jobfindrr-backend",
+  "name": "jobfindrr-api",
   "version": "0.0.1-alpha",
-  "description": "JobFindrr's backend project",
+  "description": "JobFindrr's api",
   "main": "src/app.js",
   "dependencies": {
     "express": "^4.17.1"
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kaukov/JobFindrr-backend.git"
+    "url": "git+https://github.com/Kaukov/JobFindrr-api.git"
   },
   "author": "Peter Kaukov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kaukov/JobFindrr-backend/issues"
+    "url": "https://github.com/Kaukov/JobFindrr-api/issues"
   },
-  "homepage": "https://github.com/Kaukov/JobFindrr-backend#readme"
+  "homepage": "https://github.com/Kaukov/JobFindrr-api#readme"
 }

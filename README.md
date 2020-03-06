@@ -1,1 +1,1 @@
-# JobFindrr backend project
+# JobFindrr api project
