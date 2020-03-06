@@ -3,18 +3,26 @@
   "version": "0.0.1-alpha",
   "description": "JobFindrr's backend project",
   "main": "src/app.js",
-  "scripts": {
-    "start": "node src/app.js",
-    "dev": "APP_ENV=dev nodemon src/app.js",
-    "lint": "./node_modules/.bin/eslint src"
-  },
-  "author": "Peter Kaukov",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "nodemon": "^2.0.2"
-  }
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "APP_ENV=dev nodemon src/app.js",
+    "lint": "./node_modules/.bin/eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaukov/JobFindrr-backend.git"
+  },
+  "author": "Peter Kaukov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaukov/JobFindrr-backend/issues"
+  },
+  "homepage": "https://github.com/Kaukov/JobFindrr-backend#readme"
 }
