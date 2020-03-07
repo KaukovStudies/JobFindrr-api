@@ -1,9 +1,9 @@
-const path = require('path')
-
 const router = require('express').Router()
 
+const { getFilePath } = require('../utils')
+
 router.get('/', (_req, res) => {
-	res.sendFile(path.join(__dirname, '..', 'views', 'home.html'))
+	res.sendFile(getFilePath('views', 'home.html'))
 })
 
 module.exports = router
