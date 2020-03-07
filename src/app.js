@@ -1,13 +1,17 @@
 // .env configuration import
 require('dotenv').config()
 
+// Require models so Sequelize knows about them and creates the needed tables with sync()
+require('./models')
+
 const express = require('express')
 const bodyParser = require('body-parser')
 
-const { getFilePath } = require('./utils')
+const { getFilePath, db } = require('./utils')
 const routes = require('./routes')
 
 const port = process.env.APP_PORT || 3000
+const force = false
 
 const app = express()
 
@@ -22,4 +26,10 @@ app.use(express.static(getFilePath('static')))
 // Add all routes
 app.use(routes)
 
-app.listen(port)
+db.sync({ force }) // TODO: Remove sync() and use migrations!
+	.then(result => {
+		app.listen(port)
+
+		console.log(`\nApp launched on http://${process.env.APP_HOST || 'localhost'}:${port}\n`)
+	})
+	.catch(err => console.error(err))
