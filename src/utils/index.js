@@ -1,8 +1,9 @@
 const { rootDir, getFilePath } = require('./paths')
-const db = require('./db')
+const { db, dataTypes } = require('./db')
 
 module.exports = {
 	rootDir,
 	getFilePath,
-	db
+	db,
+	dataTypes
 }
