@@ -1,6 +1,4 @@
 const { db, dataTypes } = require('../utils')
-const Country = require('./country')
-const User = require('./user')
 
 const UserDetails = db.define('userDetails', {
 	age: dataTypes.TINYINT,

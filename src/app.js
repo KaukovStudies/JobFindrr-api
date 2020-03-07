@@ -27,7 +27,7 @@ app.use(express.static(getFilePath('static')))
 app.use(routes)
 
 db.sync({ force }) // TODO: Remove sync() and use migrations!
-	.then(result => {
+	.then(() => {
 		app.listen(port)
 
 		console.log(`\nApp launched on http://${process.env.APP_HOST || 'localhost'}:${port}\n`)
