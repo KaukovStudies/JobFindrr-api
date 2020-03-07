@@ -1,3 +1,6 @@
+// .env configuration import
+require('dotenv').config()
+
 const express = require('express')
 const { json: bpJson, urlencoded: bpUrlEncoded, raw: bpRaw } = require('body-parser')
 
